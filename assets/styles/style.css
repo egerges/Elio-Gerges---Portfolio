@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    --body-bg-color: #FFFFFF;
+    --nav-color : #032961;
+    --text-color-light-bg: #203A61;
+    --text-color-dark-bg: #FFFFFF;
+    --header-1-color: #0548AD;
+    --header-2-color: #065DE0;
+    --footer-bg-color: #203A61;
+    --footer-text-color: #FFFFFF;
+    --active-nav-link-color: #4C89E6;
+}
+
+body {
+    background-color: var(--body-bg-color);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100vw;
+    height: fit-content;
+}
+
+.upper {
+    display: flex;
+}
+
+header {
+    width: 100vw;
+}
+
+header h1 {
+    margin-left: 5%;
+    padding: 20px;
+}
+
+header h1 a {
+    color: var(--header-1-color);
+    text-decoration: none;
+}
+
+main {
+    width: 100%;
+}
+
+nav {
+    width: 20vw;
+    height: 100vh;
+    background-color: var(--nav-color);
+    padding: 20px;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links-item {
+    margin: 60px 10px;
+}
+
+.nav-links-item a {
+    color: var(--text-color-dark-bg);
+    text-decoration: none;
+}
+
+.nav-links-item a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    text-align: center;
+    padding: 15px;
+}
+
+#middle-section {
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    align-items: center;
+    padding: 15%;
+}
+
+h2 {
+    color: var(--header-2-color);
+}
+
+p {
+    color: var(--text-color-light-bg);
+}
+
+.profile-pic-wrapper {
+    position: relative; 
+    width: 400px; 
+    height: 400px; 
+    overflow: hidden; 
+    border-radius: 50%;
+}
+
+#profile-pic {
+    width: 100%; height: auto;
+}
+
+.body-holder {
+    width: 75%;
+    padding: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-holder {
+    margin-bottom: 10%;
+}
