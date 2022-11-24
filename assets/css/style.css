@@ -80,9 +80,6 @@ footer {
 
 #middle-section {
     display: flex;
-    /* width: 100%;
-    height: 80vh;
-    padding: 15%; */
     align-items: center;
 }
 
@@ -96,20 +93,43 @@ p {
 
 .image-holder {
     position: relative;
-    left: 50px;
+    left: 200px;
 }
 
-.profile-pic-wrapper {
+.pic-wrapper {
     position: relative; 
-    width: 400px; 
-    height: 400px; 
     overflow: hidden; 
-    border-radius: 50%;
-    background-image: url('../img/profile_pic.JPG');
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
+}
+
+.profile-pic {
+    background-image: url('../img/profile_pic.JPG');
+    border-radius: 50%;
     background-position-y: 15%;
+    width: 400px; 
+    height: 400px; 
+}
+
+.education-pic,
+.experience-pic,
+.project-pic {
+    border-radius: 0%;
+    width: 650px; 
+    height: 550px; 
+}
+
+.education-pic {
+    background-image: url('../img/certificate.svg');
+}
+
+.experience-pic {
+    background-image: url('../img/experience.svg');
+}
+
+.project-pic {
+    background-image: url('../img/project.svg');
 }
 
 #profile-pic {
@@ -118,7 +138,6 @@ p {
 }
 
 .body-holder {
-    width: 75%;
     padding: 15%;
     display: flex;
     flex-direction: column;
